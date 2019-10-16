@@ -367,7 +367,7 @@ nav > ul > li > a {
 } 
 
 .sde picture, .sde img{
-        width: 150px;
+        width: 100%;
 }
 
 .sde{
@@ -398,7 +398,7 @@ iframe{
 }
 
 .bzr img, .qte img{
-    max-width: 380px;
+    max-width: 100%;
 }   
 
 .main {
