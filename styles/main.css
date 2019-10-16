@@ -270,7 +270,7 @@ nav > ul > li > a {
     grid-template-areas: 
         "sfr sfr"
       "intr intr"   
-      "brd brd"   
+      "pol brd"   
         "frt blg"      
         "bzr bzr"
        "qte qte";
@@ -284,13 +284,6 @@ nav > ul > li > a {
     grid-area: intr;
     display: flex;
     flex-flow: column;
-    background: #fff;
-    background-image: url(../images/backdrop.svg);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-origin: inherit;
-    padding: 10px;
-    color: #000;
 }
 
 .bzr{
@@ -322,19 +315,14 @@ nav > ul > li > a {
     background: #eee;
 }
 
-.intr{
-    grid-area: intr;
-    display: flex;
-    flex-flow: column;
-    background: #fff;
+.pol{
+    grid-area: pol;
     background-image: url(../images/backdrop.svg);
     background-repeat: no-repeat;
-    background-size: 100px;
-    background-attachment: fixed;
+    background-size: 400px;
+    background-attachment: scroll;
     background-origin: inherit;
-    background-position:4%;
-    padding: 10px;
-    color: #000;
+    background-position: 0% 100%;
 }
 
 /*BIG PIC*/
@@ -462,7 +450,12 @@ footer a:hover{
         }
     
     .intr{
-        background-size: 200px;
+        background: #fff;
+        background-image: url(../images/backdrop.svg);
+        background-repeat: no-repeat;
+        color: #000;
+        background-attachment: fixed;
+        background-size: 300px;
         background-position:1%;
         padding: 40px;
     }
@@ -474,6 +467,10 @@ footer a:hover{
     
     .bzr img, .qte img{
         max-width: 420px;
+    }
+    
+    .pol{
+        display: none;;
     }
     
     /*HEADER*/
@@ -553,19 +550,8 @@ footer a:hover{
     .intr{
         padding-left: 120px;
         padding-right: 120px;
-    }
-    
-    .intr{
-        grid-area: intr;
-        display: flex;
-        flex-flow: column;
-        background: #fff;
-        background-image: url(../images/backdrop.svg);
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        background-origin: inherit;
+        background-size: 350px;
         background-position:0%;
-        color: #000;
     }
     
     .bzr img{
@@ -694,19 +680,8 @@ footer a:hover{
     }
     
     .intr{
-        display: flex;
-        flex-flow: column;
-        padding: 100px;
-        display: flex;
-        flex-flow: column;
-        background: #fff;
-        background-image: url(../images/backdrop.svg);
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        background-origin: inherit;
-        background-position:0%;
         padding: 80px;
-        color: #000;
+        background-size: 400px;
     }
 
     .qte{
