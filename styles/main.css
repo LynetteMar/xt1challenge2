@@ -271,8 +271,12 @@ nav > ul > li > a {
     grid-gap: 15px;
     grid-template-areas: 
         "sfr sfr"
+<<<<<<< HEAD
       "intr intr"   
       "pol brd"   
+=======
+      "intr brd"   
+>>>>>>> parent of 73dfd77... update
         "frt blg"      
         "bzr bzr"
        "qte qte";
