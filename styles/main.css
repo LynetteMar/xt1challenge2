@@ -71,7 +71,7 @@ button:hover, button:focus{
 button.sec{
     background: #BF7E04;
     color: #000;
-    margin: 10px auto;
+    margin: 10px 80px;
     font-weight: 800;
 }
 
