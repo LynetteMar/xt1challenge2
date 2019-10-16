@@ -1,0 +1,181 @@
+<!DOCTYPE html> <!--ALT bij IMG toevoefgen-->
+<html lang="nl">
+	<head>
+		<meta charset="UTF-8" />
+		<title>Buurtsuper Leo v.d. Drift</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link type="text/css" href="styles/main.css" rel="stylesheet" />
+        <!-- favicon -->
+        <link rel="icon" type="image/png" href="images/logo_market-fav.png" sizes="32x32" />
+        <!-- font awesome -->
+        <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+	</head>
+	<body>
+	  	<header class="grid-item header">
+            <a href="index.html" class="svg"><!-- SVG -->
+                <object type="image/svg+xml" data="images/logo_market.svg" class="logo">
+                    <img src="images/logo_market.png" class="logo"/>
+                </object>
+            </a>
+	  		<div class="menutoggle">
+		  		<a href="#">Menu</a>
+		  	</div>
+	  	</header>
+	    <nav id="menu" class="inactive">
+            <a href="index.html" id="mbl-log" class="svg"><!-- SVG -->
+                <object type="image/svg+xml" data="images/logo_market.svg" class="logo">
+                    <img src="images/logo_market.png" class="logo"/>
+                </object>
+            </a>
+	    	<ul>
+	    		<li><a href="#">Home</a></li>
+	    		<li><a href="#">Over ons</a></li>
+	    		<li><a href="#">Kantoren en bedrijven</a></li>
+	    	</ul>
+            <button class="sec"><i class='fas fa-shopping-basket'></i> Bestellen</button>	
+	    </nav>
+	    <main id="content" class="grid-item main">
+            <section class="sfr">
+                <!--<h1>Online shoppen voor uw lunch</h1>-->
+                <h1>Wat wil jij voor lunch?</h1>
+                <button >Bekijk alle lunchopties</button>
+            </section>
+            <section class="intr">
+                <h2>Bij Buurtsuper Leo v.d. Drift bent u aan het juiste adres als het gaat om dagelijks verse producten</h2>
+            </section>
+            <article class="brd sde">
+                <h3>Vers brood</h3>
+                <picture><!--ART DIRECTION-->
+                      <source media="(max-width: 599px)" srcset="images/toast_600.jpg">
+                      <source media="(min-width: 600px) and (max-width: 799px)" srcset="images/toast_800.jpg">
+                      <source media="(min-width: 800px) and (max-width: 1199px)" srcset="images/toast_1200.jpg">
+                      <source media="(min-width: 1200px)" srcset="images/toast_1400.jpg">
+                    
+                      <img src="images/toast_1400.jpg" alt="brood" />
+                </picture>
+                <p>Wij bakken croissants en appelflappen heerlijk voor bij de koffie. Elke dag hebben wij ook vers brood van de warme bakker Laurens Bosman uit Rijswijk.
+                </p>
+            </article>
+            <article class="frt sde">
+                <h3>Vers fruit</h3>
+                <picture><!--ART DIRECTION-->
+                      <source media="(max-width: 599px)" srcset="images/fruit_600.jpg">
+                      <source media="(min-width: 600px) and (max-width: 799px)" srcset="images/fruit_800.jpg">
+                      <source media="(min-width: 800px) and (max-width: 1199px)"  srcset="images/fruit_1200.jpg">
+                      <source media="(min-width: 1200px)" srcset="images/fruit_1400.jpg">
+                    
+                      <img src="images/fruit_1400.jpg" alt="fruit" />
+                </picture>
+                <p>Wat is er lekkerder dan een gezond stukje fruit voor bij de lunch of na de avondmaal. Elke dag wordt ons assortiment aangevuld met vers fruit.</p>
+            </article>
+            <article class="blg sde">
+                <h3>Vers beleg</h3>
+                <picture><!--ART DIRECTION-->
+                      <source media="(max-width: 599px)"  srcset="images/beleg_600.jpg">
+                      <source media="(min-width: 600px) and (max-width: 799px)" srcset="images/beleg_800.jpg">
+                      <source media="(min-width: 800px) and (max-width: 1199px)"  srcset="images/beleg_1200.jpg">
+                      <source media="(min-width: 1200px)"   srcset="images/beleg_1400.jpg">
+                    
+                      <img src="images/beleg_1400.jpg" alt="beleg" />
+                </picture>
+                <p>Geniet van vers gesneden beleg op uw brood. Wij snijden en verpakken elke dag vers beleg zodat u thuis kan genieten van het meest verse beleg. 
+                </p>
+            </article>
+            <section class="bzr">
+                <article>
+                     <p>Heeft u als bedrijf of kantoor een lunch nodig? Bestel bij ons makkelijk online de producten die u nodig heeft voor een smakelijke lunch. Bezorging wordt binnen een straal van 5km uiteraard door ons geregeld. Namens ons alvast eet smakelijk.</p><button class="ter">Bestellen</button>
+                </article><!--RESOLUTION SWITCHING-->
+                <img srcset="images/bestelbus_600.jpg 320w,
+                         images/bestelbus_800.jpg 480w,
+                         images/bestelbus_1200.jpg 800w
+                         images/bestelbus_1400.jpg 1020w"
+                 sizes="(max-width: 599px) 280px,
+                        (max-width: 799px) 440px,
+                        (max-width: 1199px) 800px,
+                        1020px"
+                 src="images/bestelbus.jpg" alt="  ">
+            </section>
+            <section class="qte"><!--RESOLUTION SWITCHING-->
+                <img srcset="images/buurtsuper_600.png 320w,
+                         images/buurtsuper_800.png 480w,
+                         images/buurtsuper_1200.png 800w
+                         images/buurtsuper_1400.png 1020w"
+                 sizes="(max-width: 599px) 280px,
+                        (max-width: 799px) 440px,
+                        (max-width: 1199px) 800px,
+                        1020px"
+                 src="images/buurtsuper.png" alt="  ">
+                <blockquote cite="http://www.buurtsuperleovddrift.nl/over_ons.html">"<em>Buurtsuper Leo v.d. Drift</em> is al 75 jaar een begrip in Laakkwartier. Niets is ons te gek en wij staan graag <em>klaar voor uw dagelijkse boodschappen.</em>"
+                </blockquote>
+            </section>
+	    </main>
+	    <footer class="grid-item foot">
+            <section>
+                <figure><!--SVG-->
+                    <img src="images/logo_market-white.png" />
+                </figure><!--FONT AWESOME-->
+                <a href="#"><i class='fab fa-facebook' style='font-size:36px'></i></a>
+                <a href="#"><i class='fab fa-pinterest' style='font-size:36px'></i></a>
+                <address>
+                    <p>Laakkwartier Den Haag</p>
+                    <p>Email: <a href="mailto:info@buurtsuperleovddrift.nl">info@buurtsuperleovddrift.nl</a>
+                    </p>
+                    <p>Telefoonnummer:
+                    <a href="tel:+3170 4140891">(070) 4140891</a></p>
+                </address>
+            </section>
+            <section>
+                <p>Op onderstaande dagen en tijden bent u van harte welkom in onze buurtsuper</p>
+                <table>
+                    <tr>
+                        <th>Dag</th>
+                        <th>Van</th>
+                        <th>Tot</th>
+                    </tr>
+                    <tr>
+                        <td>Maandag - Vrijdag</td>
+                        <td>07:30u</td>
+                        <td>19:00u</td>
+                    </tr>
+                    <tr>
+                        <td>Zaterdag</td>
+                        <td>07:30u</td>
+                        <td>17:00u</td>
+                    </tr>
+                    <tr>
+                        <td>Zondag</td>
+                        <td>10:00u</td>
+                        <td>17:00u</td>
+                    </tr>
+                </table>
+                <br />
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2453.2001257558427!2d4.323846180065961!3d52.0578795782248!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c5b6ef6c227503%3A0xef355a3a309e5d17!2sLinnaeusstraat%20175%2C%202522%20GK%20Den%20Haag!5e0!3m2!1snl!2snl!4v1569600922990!5m2!1snl!2snl" width="400" height="300" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+            </section>
+            <section class="xtr"><!--RESOLUTION SWITCHING-->
+                <img srcset="images/spar_logo_600.png 320w,
+                         images/spar_logo_800.png 480w,
+                         images/spar_logo_1200.png 800w
+                         images/spar_logo_1400 1020w"
+                 sizes="(max-width: 599px) 280px,
+                        (max-width: 799px) 440px,
+                        (max-width: 1199px) 800px,
+                        1020px"
+                 src="images/spar_logo_1400.png" alt="  ">
+                <p>Lid van SPAR</p>
+                <p>Buurtsupermarkt Leo van der Drift is lid van SPAR. Zo profiteert u van verse producten tegen betaalbare prijzen.</p><!--RESOLUTION SWITCHING-->
+                <img srcset="images/nix18_logo_600.png 320w,
+                         images/nix18_logo_800.png 480w,
+                         images/nix18_logo_1200.png 800w
+                         images/nix18_logo_1400.png 1020w"
+                 sizes="(max-width: 599px) 280px,
+                        (max-width: 799px) 440px,
+                        (max-width: 1199px) 800px,
+                        1020px"
+                 src="images/nix18_logo_1400.png" alt="  ">
+                <p>Copyright © 2010 Leo van der Drift. All Rights Reserved.</p>
+                <p>Design by: Lynette Martina</p>
+            </section>
+        </footer>
+	  <script src="scripts/main.js"></script>
+	</body>
+</html>

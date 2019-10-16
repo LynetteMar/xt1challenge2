@@ -1,0 +1,802 @@
+@import url('https://fonts.googleapis.com/css?family=Viga&display=swap');
+
+@import url('https://fonts.googleapis.com/css?family=Be+Vietnam:300i,400,400i,500,500i,600,600i,700,700i,800,800i&display=swap');
+
+/*
+#59024B
+#214002
+#BF7E04
+#BF2604
+*/
+
+/*HEADINGS*/
+h1{
+    font-size: 48px;
+    text-align: center;
+    font-family: 'Be Vietnam', sans-serif;
+    font-weight: 800;
+    color: #fff;
+    text-shadow: -2px 1px 2px rgba(100, 100, 100, 1);
+}
+
+h2{
+    font-size: 24px;
+    padding: 0.4em;
+    font-family: 'Viga', sans-serif;
+}
+
+p, blockquote, .menutoggle a, button{
+    font-family: 'Be Vietnam', sans-serif;
+    font-size: 16px;
+}
+
+blockquote{
+    line-height: 2;
+}
+
+th{
+    text-align: left;
+}
+
+td{
+    padding-right: 10px;
+}
+
+em{
+    font-weight: bold;
+}
+
+img {
+  width: 100%;
+  margin: 0px;
+}
+
+/*BUTTONS*/
+button{
+    font-family: 'Be Vietnam', sans-serif;
+    background: #000;
+    color: #fff;
+    border: none;
+    padding: 15px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius:  10px;
+}    
+    
+button:hover, button:focus{
+    background: #fff;
+    color: #000;
+    cursor: pointer;
+}
+
+button.sec{
+    background: #BF7E04;
+    color: #000;
+    margin: 10px 80px;
+    font-weight: 800;
+}
+
+button.sec:hover, button.sec:focus{
+     background: rgba(0,0,0,0.2);
+}
+
+button.ter{
+    background: #fff;
+    border: 4px solid black;
+    color: #000;
+}
+
+button.ter:hover, button.ter:focus{
+    background: #BF7E04;
+    border: 4px solid #BF7E04;
+}
+
+/*BODY GRID*/
+body{
+    font-family: 'Be Vietnam', sans-serif;
+    margin: 0px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+        "title title"
+        "main  main"
+        "main  main"
+        "foot  foot "; 
+}
+
+.header{
+  grid-area: title;
+    align-items: center
+} 
+
+#content{
+  grid-area: main;
+}
+
+#menu {
+  grid-area: menu;
+}
+
+.ad1 {
+  grid-area: ad1;
+}
+
+.prod {
+  grid-area: prod;
+}
+
+.foot {
+  grid-area: foot;
+}
+
+.header, .main, .foot{
+  padding: 1em;
+}
+
+/*HEADER*/
+header {
+  display: flex;
+  flex-flow: row;
+  align-items:  ;
+}
+
+.menutoggle {
+  margin-left: auto;
+    text-align: center;
+}
+
+.menutoggle a{
+    font-weight: 700;
+    text-decoration: none;
+    color: #000;
+}
+
+.menutoggle a:hover{
+    background: #000;
+    color: #fff;
+}
+
+.menutoggle a:focus{
+    background: #59024B;
+    color: #fff;
+}
+
+a.svg {
+ position: relative;
+ display: inline-block;
+}
+
+a.svg:after {
+  content: ""; 
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left:0;
+}
+
+.active {
+    width: 300px;
+    transition: width 0.1s ease-out;
+    -webkit-box-shadow: 14px 1px 12px -6px rgba(0,0,0,0.28);
+    -moz-box-shadow: 14px 1px 12px -6px rgba(0,0,0,0.28);
+    box-shadow: 14px 1px 12px -6px rgba(0,0,0,0.28);
+}
+
+.inactive {
+    width: 0;
+    transition: width 0.1s ease-out;
+}
+
+nav {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  overflow: hidden;
+  height: 100vh; 
+  display: flex;
+  flex-flow: column;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul {
+  display: flex;
+  flex-flow: column;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li {
+  display: flex;
+  padding: 1em;
+  margin: 0em;
+  list-style: none;
+  justify-content: center;
+    border: 5px solid #fff;
+}
+
+nav ul li:hover, nav ul li:focus{
+  border: 5px solid #000;
+    font-weight: bolder;
+}
+
+nav > ul > li > a {
+    color: #000;
+  text-decoration: none;
+}
+
+.logo{
+    width: 180px;
+    padding-top: 10px;
+    transition: width 0.3s ease-in-out;
+}
+
+#mbl-log{
+    width: 200px;
+    padding: 30px;
+    align-self: center;
+}
+
+#menu {
+    background-color: #fff;
+    font-weight: 800;
+}
+
+/*SVG LOGO*/
+#leo{
+    animation: 0.5s appear ease;
+}
+
+#high{
+    animation: 1s appear ease;
+}
+
+#cart{
+    animation: 1.5s appear ease;
+}
+
+#buurt{
+    animation: 2s appear ease;
+}
+
+@keyframes appear {
+  0%   {opacity: 0;}
+  100% {opacity: 1;}
+}
+/*MAIN CONTENT GRID*/
+.main{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 15px;
+    grid-template-areas: 
+        "sfr sfr"
+      "intr brd"   
+        "frt blg"      
+        "bzr bzr"
+       "qte qte";
+}
+
+.sfr{
+    grid-area: sfr;
+}
+
+.intr{
+    grid-area: intr;
+    display: flex;
+    flex-flow: column;
+    background: #fff;
+    background-image: url(../images/backdrop.svg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-origin: inherit;
+    padding: 10px;
+    color: #000;
+}
+
+.bzr{
+    grid-area: bzr;
+    padding: 30px;
+    display: flex;
+    flex-flow: column;
+    flex-direction: column-reverse;
+}
+
+.brd{
+    grid-area: brd; 
+    background: #59024B;
+}
+
+.frt{
+    grid-area: frt;
+    background: #214002;
+}
+
+.blg{
+    grid-area: blg; 
+    background: #BF7E04;
+}
+
+.qte{
+    grid-area: qte;
+    padding: 40px;
+    background: #eee;
+}
+
+.intr{
+    grid-area: intr;
+    display: flex;
+    flex-flow: column;
+    background: #fff;
+    background-image: url(../images/backdrop.svg);
+    background-repeat: no-repeat;
+    background-size: 100px;
+    background-attachment: fixed;
+    background-origin: inherit;
+    background-position:4%;
+    padding: 10px;
+    color: #000;
+}
+
+/*BIG PIC*/
+.sfr{
+    background: url("../images/salad_600.jpg") no-repeat scroll center;
+    background-size: 600px;
+    background-position: center;
+    height: 400px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+/*COLOR BLOCKS*/
+.sde p{
+    background: rgba(0,0,0,0.2);
+    color: #fff;
+    display: none;
+}
+
+.sde{
+    padding: 20px;
+}
+
+.sde h3{
+    background: rgba(0,0,0,0.2);
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+} 
+
+.sde picture, .sde img{
+        width: 150px;
+}
+
+.sde{
+    text-align: center;
+}
+
+/*FOOTER*/
+.foot {
+    background-color: #1F1F1F;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+.foot img{
+    width: 200px;
+}
+    
+footer > section{
+    margin: 10px;
+    padding: 40px;
+    background: #171717;
+}
+
+iframe{
+    display: none;
+}
+
+.bzr img, .qte img{
+    max-width: 380px;
+}   
+
+.main {
+    background-color: #fff;
+}
+
+footer {
+    color: #fff; 
+}
+
+footer > section{/*
+    background: #fff;
+    color: #000;*/
+}
+
+footer a{
+    color: #BF7E04;
+}
+
+footer a:hover{
+    color: #fff;
+}
+    
+@media only screen and (min-width: 600px){
+    
+    /*HEADINGS*/
+    h1{
+        font-size: 52px;
+    }
+
+    h2{
+        font-size: 26px;
+    }
+
+    p, blockquote, .menutoggle a, button{
+        font-size: 18px;
+    }
+    
+    /*BUTTONS*/
+    button.sec{
+       width: 200px;
+    }
+    
+    /*MAIN CONTENT*/
+    .main{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 15px;
+        grid-template-areas: 
+            "sfr sfr"
+            "intr brd"   
+            "frt blg"      
+            "bzr bzr"
+            "qte qte";
+        }
+    
+    .intr{
+        background-size: 200px;
+        background-position:1%;
+        padding: 40px;
+    }
+    
+    .bzr, .qte{
+        padding-left: 15%;
+        padding-right: 15%;
+    }   
+    
+    .bzr img, .qte img{
+        max-width: 420px;
+    }
+    
+    /*HEADER*/
+    .logo{
+        width: 200px;
+    }
+    
+    /*BIG PIC*/
+    .sfr{
+        background: url("../images/salad_800.jpg") no-repeat scroll center;
+        background-size: 1100px;
+    }
+    
+    /*COLOR BLOCKS*/
+     .sde p{
+        display: block;
+    }
+    
+    .sde picture, .sde img{
+        width: 220px;
+    }
+    
+    .sde{
+        text-align: center;
+    }
+}
+
+@media only screen and (min-width: 800px){
+    /*HEADINGS*/
+    h1{
+        font-size: 54px;
+    }
+
+    h2{
+        font-size: 28px;
+    }
+
+    p, blockquote, .menutoggle a, button{
+        font-size: 20px;
+    }
+    
+    /*BODY GRID*/
+       body{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr ;
+        grid-gap: 10px;
+        grid-template-areas: 
+              "title title title"
+              "main  main  main"
+              "main  main main "
+              "foot  foot  foot"; 
+        }
+    
+    /*HEADINGS*/
+     button.sec{
+         background: #BF7E04;
+        color: #000;
+        margin: 1em;
+        padding: 0px 10px;
+    }
+    
+    /*MAIN CONTENT*/
+    .main{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-gap: 15px;
+        grid-template-areas: 
+            "sfr sfr sfr sfr"
+            "intr intr intr intr"   
+            ". brd brd brd"   
+            "frt frt frt ."      
+            ". blg blg blg"      
+            "bzr bzr bzr bzr"
+            "qte qte qte qte";
+        }
+    
+    .intr{
+        padding-left: 120px;
+        padding-right: 120px;
+    }
+    
+    .intr{
+        grid-area: intr;
+        display: flex;
+        flex-flow: column;
+        background: #fff;
+        background-image: url(../images/backdrop.svg);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-origin: inherit;
+        background-position:0%;
+        color: #000;
+    }
+    
+    .bzr img{
+        margin: 0px;
+    }
+    
+    .bzr{
+        display: flex;
+        flex-flow: row;
+        padding: 80px;
+    }
+    
+    .qte{
+        display: flex;
+        flex-flow: row;
+        padding: 80px;
+    }
+    
+    /*BIG PIC*/
+    .sfr{
+        background: url("../images/salad_1200.jpg") no-repeat scroll center;
+        background-size: 1200px;
+    }
+    
+    /*COLOR BLOCKS*/
+     .sde picture, .sde img{
+        width: 300px;
+    }
+    
+    .sde{
+        display: flex;
+        flex-flow: row;
+        align-items: center;
+    }
+    
+    /*HEADER*/
+    .logo{
+        width: 220px;
+    }
+    
+    /*FOOTER*/
+    .foot img{
+        width: 220px;
+    }
+    
+    footer > section{
+        margin: 10px;
+        padding: 30px;
+        width: 180px;
+        background: none;
+    }
+
+    .foot {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 10px;
+        flex-flow: row;
+        justify-content: space-around;
+    }
+}
+
+@media only screen and (min-width: 1200px){
+    /*HEADINGS*/
+    h1{
+        font-size: 56px;
+    }
+
+    h2{
+        font-size: 30px;
+    }
+
+    p, blockquote, .menutoggle a, button{
+        font-size: 22px;
+    }
+    
+     /*BODY GRID*/
+       body{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr ;
+        grid-gap: 10px;
+        grid-template-areas: 
+              "title menu menu"
+              "main  main  main"
+              "main  main main "
+              "foot  foot  foot"; 
+        }
+    
+     /*HEADINGS*/
+    h1{
+        font-size: 50px;
+    }
+    
+     h2{
+        font-size: 1.8em;
+    }
+    
+    h3{
+        font-size: 1.3em;
+    }
+    
+    p, blockquote{
+        font-size: 1.1em;
+    }
+    
+    button.sec{
+        font-size: 1em;
+        margin-right: 0px;
+    }
+    
+    button{
+        font-size: 20px;
+    }
+    
+    /*MAIN CONTENT*/
+    .main{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 20px;
+        grid-template-areas: 
+            "sfr sfr sfr"
+            "intr brd brd"
+            "intr frt frt"
+            "intr blg blg"
+            "bzr bzr bzr"
+            "qte qte qte";
+    }
+    
+    .intr{
+        display: flex;
+        flex-flow: column;
+        padding: 100px;
+        display: flex;
+        flex-flow: column;
+        background: #fff;
+        background-image: url(../images/backdrop.svg);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-origin: inherit;
+        background-position:0%;
+        padding: 80px;
+        color: #000;
+    }
+
+    .qte{
+        padding: 30px;
+    }
+    
+    .bzr img, .qte img{
+       width: 1000px;
+    }
+    
+    /*HEADER*/
+    .menutoggle{
+        display: none;
+    }
+
+    .active, .inactive{
+        width: unset;
+    }
+
+    nav {
+        position: static;
+        height: unset;
+        display: flex;
+        flex-flow: row;
+        margin-right: 15px;
+    }
+    
+    nav ul{
+        display: flex;
+        flex-flow: row;
+        justify-content:flex-end;
+        padding: 0;
+        align-items: center;
+    }
+    
+    nav ul li{
+        display: flex;
+        padding: 1em;
+        margin: 0;
+        list-style: none;
+        justify-content: center;
+        border: none;
+        border: 5px solid #fff;
+    }
+    
+    #menu li{
+        margin: 5px;
+    }
+        
+    #menu{
+        background-color: #fff;
+    }
+    
+    #mbl-log{
+        display: none;
+    }
+    
+    /*BIG PIC*/
+    .sfr{
+        background: url("../images/salad_1400.jpg") no-repeat scroll center;
+        background-size: cover;
+    }
+    
+    
+    /*COLOR BLOCKS*/
+    .sde{
+        display: flex;
+        flex-flow: row;
+        align-items: center;
+    }
+    
+    .sde picture, .sde img{
+        width: 350px;
+    }
+    
+    .sde p, .sde h3{
+        padding: 20px;
+    }
+    
+    .sde p{
+        display: block;
+    }
+
+    /*FOOTER*/
+    .foot img{
+        width: 300px;
+    }
+    
+    footer > section{
+        margin: 10px;
+        padding: 40px;
+        max-width: 300px;
+        background: none
+    }
+    
+    iframe{
+        display: block;
+    }
+}
