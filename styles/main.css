@@ -175,10 +175,8 @@ a.svg:after {
 }
 
 .active {
-    width: 300px;
+    width: 60%;
     transition: width 0.1s ease-out;
-    -webkit-box-shadow: 14px 1px 12px -6px rgba(0,0,0,0.28);
-    -moz-box-shadow: 14px 1px 12px -6px rgba(0,0,0,0.28);
     box-shadow: 14px 1px 12px -6px rgba(0,0,0,0.28);
 }
 
@@ -436,6 +434,13 @@ footer a:hover{
 
     p, blockquote, .menutoggle a, button{
         font-size: 18px;
+    }
+    
+    /*HEADER*/
+    .active {
+        width: 350px;
+        transition: width 0.1s ease-out;
+        box-shadow: 14px 1px 12px -6px rgba(0,0,0,0.28);
     }
     
     /*BUTTONS*/
