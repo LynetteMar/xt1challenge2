@@ -271,7 +271,8 @@ nav > ul > li > a {
     grid-gap: 15px;
     grid-template-areas: 
         "sfr sfr"
-      "intr brd"   
+      "intr intr"   
+      "brd brd"   
         "frt blg"      
         "bzr bzr"
        "qte qte";
