@@ -74,7 +74,7 @@ address{
 /*BUTTONS*/
 button{
     font-family: 'Be Vietnam', sans-serif;
-    background: #000;
+    background: none;
     color: #fff;
     border: none;
     padding: 15px;
