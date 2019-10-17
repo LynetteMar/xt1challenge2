@@ -128,7 +128,7 @@ body{
     align-items: center
 } 
 
-#content{
+main{
   grid-area: main;
 }
 
