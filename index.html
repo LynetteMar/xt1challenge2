@@ -90,7 +90,7 @@
                          images/bestelbus_800.jpg 480w,
                          images/bestelbus_1200.jpg 800w
                          images/bestelbus_1400.jpg 1020w"
-                 sizes="(max-width: 599px) 280px,
+                 sizes="(max-width: 599px) 320px,
                         (max-width: 799px) 440px,
                         (max-width: 1199px) 800px,
                         1020px"
@@ -112,21 +112,28 @@
 	    </main>
 	    <footer class="grid-item foot">
             <section>
-                <figure><!--SVG-->
-                    <img src="images/logo_market-white.png" />
-                </figure><!--FONT AWESOME-->
-                <a href="#"><i class='fab fa-facebook' style='font-size:36px'></i></a>
-                <a href="#"><i class='fab fa-pinterest' style='font-size:36px'></i></a>
+                <a href="index.html" class="svg"><!-- SVG -->
+                    <object type="image/svg+xml" data="images/logo_market-white.svg" class="logo">
+                        <img src="images/logo_market-white.png" class="logo"/>
+                    </object>
+                </a>
+                <br /><br />
                 <address>
-                    <p>Laakkwartier Den Haag</p>
-                    <p>Email: <a href="mailto:info@buurtsuperleovddrift.nl">info@buurtsuperleovddrift.nl</a>
-                    </p>
-                    <p>Telefoonnummer:
-                    <a href="tel:+3170 4140891">(070) 4140891</a></p>
+                    <i class='fas fa-map-marker-alt'></i>  Laakkwartier Den Haag<br />
+                    <i class='fas fa-envelope-open'></i> Email: <a href="mailto:info@buurtsuperleovddrift.nl">info@buurtsuperleovddrift.nl</a>
+                    <br />
+                    <i class='fas fa-phone'></i> Telefoonnummer:
+                    <a href="tel:+3170 4140891">(070) 4140891</a>
                 </address>
+                <br/ ><br />
+                <!--FONT AWESOME-->
+                <a href="#"><i class="fab fa-facebook"></i></a> 
+                <a href="#"><i class="fab fa-pinterest"></i></a>
+                <br /><br />
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2453.2001257558427!2d4.323846180065961!3d52.0578795782248!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c5b6ef6c227503%3A0xef355a3a309e5d17!2sLinnaeusstraat%20175%2C%202522%20GK%20Den%20Haag!5e0!3m2!1snl!2snl!4v1569600922990!5m2!1snl!2snl" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
             </section>
             <section>
-                <p>Op onderstaande dagen en tijden bent u van harte welkom in onze buurtsuper</p>
+                <p><i class='fas'>&#xf017;</i>  Onze openingstijden</p>
                 <table>
                     <tr>
                         <th>Dag</th>
@@ -150,21 +157,8 @@
                     </tr>
                 </table>
                 <br />
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2453.2001257558427!2d4.323846180065961!3d52.0578795782248!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c5b6ef6c227503%3A0xef355a3a309e5d17!2sLinnaeusstraat%20175%2C%202522%20GK%20Den%20Haag!5e0!3m2!1snl!2snl!4v1569600922990!5m2!1snl!2snl" width="400" height="300" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
-            </section>
-            <section class="xtr"><!--RESOLUTION SWITCHING-->
-                <img srcset="images/spar_logo_600.png 320w,
-                         images/spar_logo_800.png 480w,
-                         images/spar_logo_1200.png 800w
-                         images/spar_logo_1400 1020w"
-                 sizes="(max-width: 599px) 280px,
-                        (max-width: 799px) 440px,
-                        (max-width: 1199px) 800px,
-                        1020px"
-                 src="images/spar_logo_1400.png" alt="  ">
-                <p>Lid van SPAR</p>
-                <p>Buurtsupermarkt Leo van der Drift is lid van SPAR. Zo profiteert u van verse producten tegen betaalbare prijzen.</p><!--RESOLUTION SWITCHING-->
-                <img srcset="images/nix18_logo_600.png 320w,
+                <!--RESOLUTION SWITCHING-->
+                <img id="nix" srcset="images/nix18_logo_600.png 320w,
                          images/nix18_logo_800.png 480w,
                          images/nix18_logo_1200.png 800w
                          images/nix18_logo_1400.png 1020w"
@@ -173,8 +167,21 @@
                         (max-width: 1199px) 800px,
                         1020px"
                  src="images/nix18_logo_1400.png" alt="  ">
-                <p>Copyright © 2010 Leo van der Drift. All Rights Reserved.</p>
-                <p>Design by: Lynette Martina</p>
+            </section>
+            <section class="xtr">
+                <p>Buurtsupermarkt Leo van der Drift is lid van SPAR. Zo profiteert u van verse producten tegen betaalbare prijzen.</p>
+                <!--RESOLUTION SWITCHING-->
+                <img id="spar" srcset="images/spar_logo_600.png 320w,
+                         images/spar_logo_800.png 480w,
+                         images/spar_logo_1200.png 800w
+                         images/spar_logo_1400 1020w"
+                 sizes="(max-width: 599px) 280px,
+                        (max-width: 799px) 440px,
+                        (max-width: 1199px) 800px,
+                        1020px"
+                 src="images/spar_logo_1400.png" alt="  ">
+                <br />
+                <p id="cre">Copyright © 2010 Leo van der Drift. All Rights Reserved.<br /><br />Design by: Lynette Martina</p>
             </section>
         </footer>
 	  <script src="scripts/main.js"></script>
