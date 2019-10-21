@@ -416,7 +416,7 @@ iframe{
 }
 
 .qte img{
-    width: 100%;
+    object-fit: contain;
     text-align: center;
     align-content: center;
     align-items: center;
@@ -425,7 +425,7 @@ iframe{
 }   
 
 .bzr img{
-    width: 100%;
+    object-fit: contain;
 }   
 
 .main {
